@@ -4,36 +4,76 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
-	<title>Dashboard</title>
+	<title>CRM Dashboard Customers</title>
 </head>
 	<body>
 		<div class="wrapper">
-			<header class="header">
-				<div class="header__menu menu">
-					<nav class="menu__body">
-						<ul class="menu__list">
-							<li class="menu__item">
-								<a class="menu__link" href="#about">about</a>
-							</li>
-							<li class="menu__item">
-								<a class="menu__link" href="#services">services</a>
-							</li>
-							<li class="menu__item">
-								<a class="menu__link" href="#technologies">technologies</a>
-							</li>
-							<li class="menu__item">
-								<a class="menu__link" href="#how-to">how to</a>
-							</li>
-						</ul>
-					</nav>
-					<div class="menu__icon">
-						<span></span>
+			<div class="wrapper__content">
+				<div class="sidebar">
+					<div class="sidebar__container">
+						<header class="sidebar__header">
+							<div class="header__logo">
+								<img class="header-logo-img" src="./img/sidebar-icon/logotype.svg" alt="logotype Dashboard">
+								<p class="header-logo-text">v.01</p>
+							</div>
+						</header>
+						<nav class="sidebar__menu">
+							<ul>
+								<li>
+									<a href="#" class="menu-link">
+										<img  src="./img/sidebar-icon/sidebar-navigation-icons/key-square-1.svg" alt="key-square">
+										<p class="menu-text">Dashboard</p>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="menu-link">
+										<img src="./img/sidebar-icon/sidebar-navigation-icons/3d-square-2.svg" alt="3d-square">
+										<p class="menu-text">Product</p>
+									</a>
+								</li>
+								<li class="menu-list-activ">
+									<a href="#" class="menu-link">
+										<img src="./img/sidebar-icon/sidebar-navigation-icons/user-square-3.svg" alt="user-square">
+										<p class="menu-text menu-text-activ">Customers</p>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="menu-link">
+										<img src="./img/sidebar-icon/sidebar-navigation-icons/wallet-money-4.svg" alt="wallet-money">
+										<p class="menu-text">Income</p>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="menu-link">
+										<img src="./img/sidebar-icon/sidebar-navigation-icons/discount-shape-5.svg" alt="discount-shape">
+										<p class="menu-text">Promote</p>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="menu-link">
+										<img src="./img/sidebar-icon/sidebar-navigation-icons/message-question-6.svg" alt="message-question">
+										<p class="menu-text">Help</p>
+									</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="sidebar__person-info person-info__block ">
+							<img class="person-info__photo" src="./img/sidebar-icon/person-photo.jpg" alt="photo user">
+							<div class="person-info__block-text">
+								<p class="person-info__name">Evano</p>
+								<p class="person-info-description">Project Manager</p>
+							</div>
+						</div>
 					</div>
+					
 				</div>
-			</header>
-			<div class="main"></div>
-			<div class="footer"></div>
+				<main class="main"></main>
+				
+			</div>
 		</div>
 	</body>
 </html>
