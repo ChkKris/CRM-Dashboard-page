@@ -33,27 +33,40 @@
 	}
 
 	&__menu {
+		position: relative;
 		padding-left: 39px;
+
+
 		.menu-link {
 			display: flex;
 		}
-		.menu-list-activ {
+		.menu__list-activ::before {
+			content: '';
+			position: absolute;
+			align-self: center;
+			left: 28px;
 			border-radius: 8px;
 			background: #5932EA;
 			width: 250px;
+			padding-left: -20px;
 			height: 46px;
-			flex-shrink: 0;
-			
 			
 		}
-
-		.menu-link {
+				.menu__list {
+					background: url(../img/sidebar-icon/arrow-right-gray.svg) no-repeat right center;
+					width: 40px;
+					height: 40px;
+					display: flex;
+					text-align: right;
+				}
+		.menu__link {
 			.menu-text {
 				margin-left: 15px;
 				color: #9197B3;
 				font-weight: 500;
 				line-height: normal;
 				letter-spacing: -0.14px;
+				
 			}			
 			.menu-text-activ {
 				color: #FFF;
@@ -74,6 +87,7 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			z-index: 11;
 		}
 	}
 	&__person-info {

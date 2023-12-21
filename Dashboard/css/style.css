@@ -123,6 +123,7 @@ h6 {
   letter-spacing: -0.1px;
 }
 .sidebar__menu {
+  position: relative;
   padding-left: 39px;
 }
 .sidebar__menu .menu-link {
@@ -130,22 +131,36 @@ h6 {
   display: -ms-flexbox;
   display: flex;
 }
-.sidebar__menu .menu-list-activ {
+.sidebar__menu .menu__list-activ::before {
+  content: "";
+  position: absolute;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  left: 28px;
   border-radius: 8px;
   background: #5932EA;
   width: 250px;
+  padding-left: -20px;
   height: 46px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
 }
-.sidebar__menu .menu-link .menu-text {
+.sidebar__menu .menu__list {
+  background: url(../img/sidebar-icon/arrow-right-gray.svg) no-repeat right center;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: right;
+}
+.sidebar__menu .menu__link .menu-text {
   margin-left: 15px;
   color: #9197B3;
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.14px;
 }
-.sidebar__menu .menu-link .menu-text-activ {
+.sidebar__menu .menu__link .menu-text-activ {
   color: #FFF;
 }
 .sidebar nav li {
@@ -167,6 +182,7 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 11;
 }
 .sidebar__person-info {
   display: -webkit-box;
