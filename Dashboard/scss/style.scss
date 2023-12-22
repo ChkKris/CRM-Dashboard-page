@@ -37,9 +37,12 @@
 		padding-left: 39px;
 
 
-		.menu-link {
+		.menu__block {
 			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
+
 		.menu__list-activ::before {
 			content: '';
 			position: absolute;
@@ -50,15 +53,23 @@
 			width: 250px;
 			padding-left: -20px;
 			height: 46px;
-			
 		}
-				.menu__list {
-					background: url(../img/sidebar-icon/arrow-right-gray.svg) no-repeat right center;
-					width: 40px;
-					height: 40px;
-					display: flex;
-					text-align: right;
-				}
+		.menu__arrow {
+			position: absolute;
+			right: 0;
+			background: url(../img/sidebar-icon/arrow-right-gray.svg) no-repeat center;
+			width: 16px;
+			height: 16px;
+			margin-right: 36px;
+		}
+		.menu__arrow-white {
+			position: absolute;
+			right: 0;
+			background: url(../img/sidebar-icon/arrow-right-white.svg) no-repeat center;
+			width: 16px;
+			height: 16px;
+			margin-right: 36px;
+		}
 		.menu__link {
 			.menu-text {
 				margin-left: 15px;
