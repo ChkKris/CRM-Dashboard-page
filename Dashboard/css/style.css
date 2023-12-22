@@ -40,6 +40,7 @@ body {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   overflow-x: hidden;
+  background-color: #FAFBFF;
 }
 
 input,
@@ -92,7 +93,15 @@ h6 {
 }
 
 /* ZEROING END */
-.sidebar__container {
+.wrapper__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* Sidebar */
+  /* Customers table */
+}
+.wrapper__content .sidebar__container {
+  padding-top: 37px;
   width: 306px;
   height: 100%;
   -ms-flex-negative: 0;
@@ -101,14 +110,14 @@ h6 {
   -webkit-box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5);
           box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5);
 }
-.sidebar__header .header__logo {
+.wrapper__content .sidebar__header .header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 37px 0 0 28px;
+  padding-left: 28px;
   margin-bottom: 65px;
 }
-.sidebar__header .header-logo-text {
+.wrapper__content .sidebar__header .header-logo-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,11 +131,11 @@ h6 {
   line-height: 2.6;
   letter-spacing: -0.1px;
 }
-.sidebar__menu {
+.wrapper__content .sidebar__menu {
   position: relative;
   padding-left: 39px;
 }
-.sidebar__menu .menu__block {
+.wrapper__content .sidebar__menu .menu__block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,7 +146,7 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
 }
-.sidebar__menu .menu__list-activ::before {
+.wrapper__content .sidebar__menu .menu__list-activ::before {
   content: "";
   position: absolute;
   -ms-flex-item-align: center;
@@ -150,7 +159,7 @@ h6 {
   padding-left: -20px;
   height: 46px;
 }
-.sidebar__menu .menu__arrow {
+.wrapper__content .sidebar__menu .menu__arrow {
   position: absolute;
   right: 0;
   background: url(../img/sidebar-icon/arrow-right-gray.svg) no-repeat center;
@@ -158,7 +167,7 @@ h6 {
   height: 16px;
   margin-right: 36px;
 }
-.sidebar__menu .menu__arrow-white {
+.wrapper__content .sidebar__menu .menu__arrow-white {
   position: absolute;
   right: 0;
   background: url(../img/sidebar-icon/arrow-right-white.svg) no-repeat center;
@@ -166,26 +175,26 @@ h6 {
   height: 16px;
   margin-right: 36px;
 }
-.sidebar__menu .menu__link .menu-text {
+.wrapper__content .sidebar__menu .menu__link .menu-text {
   margin-left: 15px;
   color: #9197B3;
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.14px;
 }
-.sidebar__menu .menu__link .menu-text-activ {
+.wrapper__content .sidebar__menu .menu__link .menu-text-activ {
   color: #FFF;
 }
-.sidebar nav li {
+.wrapper__content .sidebar nav li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 40px;
 }
-.sidebar nav li:last-child {
+.wrapper__content .sidebar nav li:last-child {
   padding-bottom: 597px;
 }
-.sidebar nav a {
+.wrapper__content .sidebar nav a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,22 +206,47 @@ h6 {
           align-items: center;
   z-index: 11;
 }
-.sidebar__person-info {
+.wrapper__content .sidebar__person-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-left: 28px;
   padding-bottom: 76px;
 }
-.sidebar__person-info .person-info__block-text {
+.wrapper__content .sidebar__person-info .person-info__block-text {
   margin-left: 12px;
 }
-.sidebar__person-info .person-info__name {
+.wrapper__content .sidebar__person-info .person-info__name {
   color: #000;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.14px;
 }
-.sidebar__person-info .person-info-description {
+.wrapper__content .sidebar__person-info .person-info-description {
   color: #838383;
+}
+.wrapper__content .main__block {
+  padding-top: 41px;
+}
+.wrapper__content .main__user-name {
+  padding-left: 71px;
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: normal;
+}
+.wrapper__content .main__user-name span::after {
+  content: url(../img/sidebar-icon/Vector.svg);
+}
+.wrapper__content .main .customers-info {
+  margin-left: 146px;
+  margin-top: 147px;
+  background: #FFF;
+  -webkit-box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5);
+          box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5);
+  border-radius: 40px;
+  width: 968px;
+  height: 812px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
