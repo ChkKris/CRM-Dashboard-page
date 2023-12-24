@@ -142,9 +142,11 @@
 
 	/* Customers table */
 	.main {
-
+		
+		
 		&__block {
 			padding-top: 41px;
+			
 		}
 
 		&__user-name {
@@ -161,18 +163,218 @@
 		}
 
 		.customers-info {
+			max-width: 968px;
+			height: 100%;
 			margin-left: 146px;
 			margin-top: 147px;
 			background: #FFF;
 			box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.50);
 			border-radius: 40px;
-			width: 968px;
-			height: 812px;
-			flex-shrink: 0;
+
+			&__block {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				align-items: center;
+				padding-top: 30px;
+			}
+			&__block-title{
+				color: #000;
+				font-size: 22px;
+				font-weight: 600;
+				line-height: normal;
+				letter-spacing: -0.22px;
+				margin-bottom: 7px;
+				padding-left: 38px;
+			}
+			&__block-subtitle {
+				color: #16C098;
+				font-size: 14px;
+				font-weight: 400;
+				line-height: normal;
+				letter-spacing: -0.14px;
+				margin-bottom: 40px;
+				padding-left: 38px;
+			}
+			&__block-search-form {
+
+			.form-block {
+				display: flex;
+				align-items: center;
+				text-align: center;
+				position: relative;
+				padding-right: 53px;
+			
+
+				
+
+				.input-search {
+					max-width: 216px;
+					height: 38px;
+					border-radius: 10px;
+					background: #F9FBFF;
+					font-weight: 400;
+					line-height: normal;
+					letter-spacing: -0.12px;
+					padding-left: 40px;
+					margin-bottom: 40px;
+
+					
+					&:hover {
+							border: grey 1px solid;
+							border-radius: 10px;
+					
+						}
+					&::placeholder {
+						color: #B5B7C0;
+						font-size: 12px;
+						font-weight: 400;
+						line-height: normal;
+						letter-spacing: -0.12px;
+					}
+				}
+
+				.search-icon {
+					position: absolute;
+					background: url(../img/sidebar-icon/search-icon.svg) no-repeat center;
+					margin-left: 8px;
+					width: 24px;
+					height: 24px;
+					cursor: pointer;
+					margin-bottom: 40px;
+
+				}
+			}
+				
+			}
+
+			&__list-customers {
+				
+
+				.list-customers__block {
+					
+
+					.list-customers__table {
+						
+						position: relative;
+						width: 100%;
+						border-collapse: collapse;
+						font-size: 14px;
+						font-weight: 500;
+						line-height: normal;
+						letter-spacing: -0.14px;
+						text-align: left;
+						margin-bottom: 32px;
+						
+						thead th {
+							text-transform: capitalize;
+							color: #B5B7C0;
+							padding-left: 38px;
+							padding-bottom: 14px;
+						}
+						thead tr {
+							border-bottom: #eee 1px solid;
+							
+						}
+						
+						tbody td {
+							padding-left: 38px;
+							color: #292D32;
+							padding-top: 24px;
+							padding-bottom: 24px;
+							
+							
+
+							&:last-child {
+								padding-right: 44px;
+							}
+						}
+
+						tbody tr {
+							border-bottom: #eee 1px solid;
+						}
+						
+						tbody button {
+							width: 80px;
+							padding: 4px 12px;
+							justify-content: center;
+							align-items: center;
+							gap: 10px;
+							border-radius: 4px;
+						}
+
+						.active {
+							border: 1px solid #00B087;
+							background: rgba(22, 192, 152, 0.38);
+						}
+						.inactive {
+							border-radius: 4px;
+							border: 1px solid #DF0404;
+							background: #FFC5C5;
+						}
+					}
+				}
+			}
+
+			.list-customers__footer {
+				display: flex;
+				justify-content: space-between;
+				.footer__text {
+					color: #B5B7C0;
+					font-size: 14px;
+					font-weight: 500;
+					line-height: normal;
+					letter-spacing: -0.14px;
+					margin-bottom: 41px;
+					margin-left: 38px;
+				}
+
+				.footer__numbers-page {
+					.pagination {
+						display: flex;
+						
+
+						li {
+							width: 25px;
+							height: 25px;
+							border-radius: 4px;
+							border: 1px solid #EEE;
+							background: #F5F5F5;
+								margin-right: 10px;
+									
+						}
+						a {
+							display: flex;
+							color: #404B52;
+							font-size: 12px;
+							font-style: normal;
+							font-weight: 500;
+							line-height: 100%;
+							letter-spacing: -0.12px;
+							padding: 6px 9px;
+							justify-content: center;
+							align-items: center;
+						}
+					}
+
+				}
+				.disabled {
+					
+
+				}
+
+				.active {}
+			}
+
+			
+
+			
+			
+						
+			
+						
 		}
 	}
-	
-
 }
 
 
