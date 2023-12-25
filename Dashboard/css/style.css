@@ -97,9 +97,6 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* Sidebar */
-  /* Customers table */
-  /* Dashboard block list */
 }
 .wrapper__content .sidebar__container {
   padding-top: 37px;
@@ -243,6 +240,7 @@ h6 {
   content: url(../img/sidebar-icon/Vector.svg);
 }
 .wrapper__content .main .dashboard-list {
+  text-align: left;
   margin-left: 146px;
   margin-top: 146px;
   background: #FFF;
@@ -269,7 +267,7 @@ h6 {
   font-weight: 600;
   line-height: normal;
   letter-spacing: -0.22px;
-  margin: 30px 0 7px 38px;
+  margin: 30px 0 7px 0;
 }
 .wrapper__content .main .dashboard-list__header-text .header-text__subtitle {
   color: #16C098;
@@ -277,7 +275,7 @@ h6 {
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.14px;
-  margin: 0 0 40px 38px;
+  margin: 0 0 40px 0px;
 }
 .wrapper__content .main .dashboard-list__header-search-form .form-block {
   display: -webkit-box;
@@ -348,4 +346,19 @@ h6 {
   height: 24px;
   cursor: pointer;
   margin-bottom: 15px;
+}
+.wrapper__content .main .dashboard-list__table .table__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+  grid-template-columns: repeat(6, 1fr);
+  text-align: left;
+}
+.wrapper__content .main .dashboard-list__table .table__content-title {
+  color: #B5B7C0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.14px;
 }
