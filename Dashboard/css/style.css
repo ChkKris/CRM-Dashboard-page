@@ -347,18 +347,17 @@ h6 {
   cursor: pointer;
   margin-bottom: 15px;
 }
-.wrapper__content .main .dashboard-list__table .table__content {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[6];
-  grid-template-columns: repeat(6, 1fr);
+.wrapper__content .main .dashboard-list .flex-table__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   text-align: left;
 }
-.wrapper__content .main .dashboard-list__table .table__content-title {
-  color: #B5B7C0;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: -0.14px;
+.wrapper__content .main .dashboard-list .flex-table .title {
+  color: #5932EA;
 }
