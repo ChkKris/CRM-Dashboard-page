@@ -222,6 +222,23 @@ h6 {
 .wrapper__content .sidebar__person-info .person-info-description {
   color: #838383;
 }
+@media (max-width: 768px) {
+  .wrapper__content .sidebar nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 150px 150px;
+    -webkit-transition: left 0.3s ease 0s;
+    transition: left 0.3s ease 0s;
+    overflow: auto;
+  }
+  .wrapper__content .sidebar nav._active {
+    left: 0;
+  }
+}
 .wrapper__content .main {
   width: 1114px;
 }
