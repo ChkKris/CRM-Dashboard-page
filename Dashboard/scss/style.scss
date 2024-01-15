@@ -26,15 +26,17 @@ body {
 					position: fixed;
 					top: 0;
 					left: -100%;
-					width: 100%;
+					max-width: 100%;
 					height: 100%;
 					background-color: #000;
 					transition: left 0.3s ease 0s;
 					overflow: auto;
-					
+					padding-top: 0;
+					z-index: 300;
 			
 					&._active {
 						left: 0;
+						
 					}
 				}
 			}
@@ -47,7 +49,12 @@ body {
 					background-color: #fff;
 				}
 	
-				.header-logo-img {}
+				.header-logo-img {
+
+					@include media.landscape {
+						padding: 20px 0 20px 20px;
+					}
+				}
 	
 				.header-logo-text {
 					display: flex;
@@ -58,12 +65,20 @@ body {
 					font-weight: 500;
 					line-height: 2.6;
 					letter-spacing: -0.1px;
+
+					@include media.landscape {
+						padding: 10px 10px 20px 0;
+					}
 				}
 			}
 	
 			&__menu {
 				position: relative;
 				padding-left: 39px;
+
+				@include media.landscape {
+					padding-left: 45px;
+				}
 	
 	
 				.menu__block {
@@ -81,6 +96,11 @@ body {
 					background: #5932EA;
 					width: 250px;
 					height: 46px;
+
+					@include media.landscape {
+						width: 260px;
+						left: 35px;
+					}
 				}
 	
 				.menu__arrow {
@@ -128,6 +148,10 @@ body {
 	
 					&:last-child {
 						padding-bottom: 597px;
+
+						@include media.landscape {
+							padding-bottom: 10px;
+						}
 					}
 				}
 	
@@ -144,6 +168,10 @@ body {
 				display: flex;
 				padding-left: 28px;
 				padding-bottom: 76px;
+
+				@include media.landscape {
+					padding-left: 45px;
+				}
 	
 				.person-info__block-text {
 					margin-left: 12px;
@@ -226,9 +254,14 @@ body {
 	// Main
 	.main {
 		width: 1114px;
+		
 	
 	&__block {
 		padding-top: 41px;
+
+		@include media.landscape {
+			padding-top: 20px;
+		}
 	}
 
 	&__user-name {
@@ -238,7 +271,9 @@ body {
 		font-weight: 500;
 		line-height: normal;
 		
-		
+		@include media.landscape {
+			padding-left: 50px;
+		}
 	}
 	&__user-name span::after {
 		content: url(../img/sidebar-icon/Vector.svg);
@@ -252,6 +287,10 @@ body {
 		box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.50);
 		border-radius: 40px;
 
+
+			@include media.landscape {
+				margin: 50px 30px 30px 0;
+			}
 
 
 			&__container {
@@ -329,6 +368,8 @@ body {
 						height: 24px;
 						cursor: pointer;
 						margin-bottom: 15px;
+						
+
 					}
 				}
 			}
@@ -339,7 +380,6 @@ body {
 						width: 100%;
 						border-collapse: collapse;
 						text-align: left;
-						
 						
 						thead {	
 							color: #B5B7C0;
@@ -365,6 +405,8 @@ body {
 							font-weight: 500;
 							line-height: normal;
 							letter-spacing: -0.14px;
+
+							
 
 							tr:last-child td:last-child {
 								border-bottom: #eee 1px solid;
