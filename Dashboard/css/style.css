@@ -401,6 +401,11 @@ body._lock {
   letter-spacing: -0.22px;
   margin: 30px 0 7px 40px;
 }
+@media (max-width: 1024px) {
+  .wrapper__content .main .dashboard-list__header-text .header-text__title {
+    margin: 20px;
+  }
+}
 .wrapper__content .main .dashboard-list__header-text .header-text__subtitle {
   color: #16C098;
   font-size: 14px;
@@ -408,6 +413,17 @@ body._lock {
   line-height: normal;
   letter-spacing: -0.14px;
   margin: 0 0 40px 40px;
+}
+@media (max-width: 1024px) {
+  .wrapper__content .main .dashboard-list__header-text .header-text__subtitle {
+    margin: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .wrapper__content .main .dashboard-list__header-search-form {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
 }
 .wrapper__content .main .dashboard-list__header-search-form .form-block {
   display: -webkit-box;
@@ -481,17 +497,12 @@ body._lock {
 }
 .wrapper__content .main .dashboard-list .table-block {
   overflow: auto;
-  position: relative;
+  margin: 10px;
 }
 .wrapper__content .main .dashboard-list .table-block table {
   width: 100%;
   border-collapse: collapse;
   text-align: left;
-}
-@media (max-width: 1024px) {
-  .wrapper__content .main .dashboard-list .table-block table {
-    overflow-x: auto;
-  }
 }
 .wrapper__content .main .dashboard-list .table-block table thead {
   color: #B5B7C0;
@@ -566,7 +577,14 @@ body._lock {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    gap: 20px;
+    padding-bottom: 20px;
   }
 }
 .wrapper__content .main .dashboard-list .table-pagination .pagination-text {

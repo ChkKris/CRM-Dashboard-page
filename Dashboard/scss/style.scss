@@ -290,20 +290,15 @@ body {
 		box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.50);
 		border-radius: 40px;
 		
-
-		
-
 			@include media.landscape {
 				margin: 50px 30px 30px 0;
 				
 			}
 
-
 			&__container {
 				overflow: auto;
 					
 			}
-
 
 			&__header {
 				display: flex;
@@ -313,6 +308,8 @@ body {
 			}
 
 			&__header-text {
+
+				
 				.header-text__title {
 					color: #000;
 					font-size: 22px;
@@ -320,6 +317,10 @@ body {
 					line-height: normal;
 					letter-spacing: -0.22px;
 					margin: 30px 0 7px 40px;
+
+					@include media.landscape {
+						margin: 20px;
+					}
 				}
 				.header-text__subtitle {
 					color: #16C098;
@@ -329,10 +330,17 @@ body {
 					letter-spacing: -0.14px;
 					margin: 0 0 40px 40px;
 
+					@include media.landscape {
+						margin: 20px;
+					}
 				}
 			}
 
 			&__header-search-form {
+				@include media.landscape {
+					margin-left: 20px;
+					margin-bottom: 20px;
+				}
 
 			.form-block {
 						display: flex;
@@ -351,7 +359,6 @@ body {
 						letter-spacing: -0.12px;
 						padding-left: 40px;
 						margin-bottom: 15px;
-
 
 						&:hover,
 						&:focus {
@@ -386,17 +393,13 @@ body {
 			.table-block {
 
 				overflow: auto;
-				position: relative;
+				margin: 10px;
 
 					table {
 						width: 100%;
 						border-collapse: collapse;
 						text-align: left;
 
-						@include media.landscape {
-							overflow-x: auto;
-						}
-						
 						thead {	
 							color: #B5B7C0;
 							font-weight: 500;
@@ -480,7 +483,11 @@ body {
 				
 				@include media.landscape {
 					flex-direction: column;
-					gap: 30px;
+					flex-wrap: wrap;
+					justify-content: center;
+					text-align: center;
+					gap: 20px;
+					padding-bottom: 20px;
 				}
 
 				.pagination-text {
